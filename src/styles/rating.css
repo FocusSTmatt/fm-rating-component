@@ -1,0 +1,26 @@
+:root {
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --MediumGrey: hsl(216, 12%, 54%);
+    --DarkBlue: hsl(213, 19%, 18%);
+    --VeryDarkBlue: hsl(216, 12%, 8%);
+  }
+
+.rating-ctn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rating-number {
+    background: hsl(180, 2%, 25%);
+    padding: 0.75em 1.25em 0.75em 1.25em;
+    border-radius: 50%;
+    font-size: 11px;
+    color: hsl(217, 12%, 63%);
+}
+
+.rating-number:hover {
+    color: #fff;
+    background:hsl(216, 12%, 54%)
+}
