@@ -1,37 +1,45 @@
-import {useState} from 'react'
-import "../styles/rating.css"
-
-
+import styled from "styled-components"
 
 export default function Rating() {
-  const [isActive, setIsActive] = useState({activeObject: null});
-  const [color, setColor] = useState({color: "red"});
-  function toggleActive(index){
-    setIsActive({...isActive, activeObject: ratingArray[index]})
-  }
 
-  function toggleActiveClass(index){
-    if(isActive.activeObject === ratingArray[index]){
-      return "ratings active"
-    } else {
-      return "ratings"
-    }
-  }
-
-
-  const ratingArray = [1, 2, 3, 4, 5];
-    const getRatingArray = ratingArray.map((rating, index) => {
-      return <span className='rating-number' key={index}>{rating}</span>
-    })
 
       return (
         <>
-          <div className='rating-ctn' >
-            {getRatingArray} 
-          </div>
+          <RatingContainer className='rating-ctn' >
+             <RatingNumber>1</RatingNumber>
+             <RatingNumber>2</RatingNumber>
+             <RatingNumber>3</RatingNumber>
+             <RatingNumber>4</RatingNumber>
+             <RatingNumber>5</RatingNumber>
+          </RatingContainer>
         </>  
     )
   }
 
 
+const RatingContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  `
+const RatingNumber = styled.button`
+  background: hsl(180, 2%, 25%); 
+  padding: 1em 1.5em 1em 1.5em;
+  font-size: 10px;
+  border-radius: 50%;
+  color: gray;
+  
+  &:hover {
+    background: gray;
+    color: #fff;
+  }
 
+  &:focus {
+    background: hsl(25, 97%, 53%);
+    color: #fff;
+    outline: none;
+   
+  }
+
+  
+ 
+`

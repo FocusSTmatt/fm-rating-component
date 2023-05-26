@@ -7,6 +7,9 @@
     --VeryDarkBlue: hsl(216, 12%, 8%);
   }
 
+.hidden {
+    display: none;
+}
 .rating-ctn {
     display: flex;
     justify-content: space-between;
@@ -20,7 +23,11 @@
     color: hsl(217, 12%, 63%);
 }
 
+.active {
+    background:hsl(25, 97%, 53%);
+    color:hsl(0, 0%, 100%);
+}
 .rating-number:hover {
     color: #fff;
-    background:hsl(216, 12%, 54%)
+    background:hsl(216, 12%, 54%);
 }

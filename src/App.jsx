@@ -11,7 +11,7 @@ function App() {
   const [score, setScore] = useState()
   const [isClicked, setIsClicked] = useState(false)
   
-  function onClick(){
+  function onSubmitClick(){
     if(score){
       setIsClicked(true);
     }
@@ -61,7 +61,7 @@ function App() {
                 <input className='rating-number' type="submit" onClick={handleClick} value="4" />
                 <input className='rating-number' type="submit" onClick={handleClick} value="5" />
               </div>
-              <button onClick={onClick} className='btn'>SUBMIT</button>
+              <button onClick={onSubmitClick} className='btn'>SUBMIT</button>
           </div> 
       </div>
 
