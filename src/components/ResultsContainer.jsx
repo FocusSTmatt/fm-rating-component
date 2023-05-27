@@ -16,7 +16,7 @@ function ResultsContainer({classname, score, innerClass, resultsScore, isClicked
     return (
         <div className={hideResults()}> 
             <div className={innerClass}>
-                <img src={thankYouImage}></img>
+                <img className='results-img' src={thankYouImage}></img>
                 <p className={resultsScore}>You selected {score} out of 5</p>
                 <h3>Thank you!</h3>
                 <p className='results-text'>We appreciate you taking the time to give a rating. 

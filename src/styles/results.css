@@ -49,28 +49,29 @@
         height: 50vh;
         width: 65%;
     }
-    .inner-results-ctn img {
-        width: 220px;
-        margin-top: 2em;
+    .results-img {
+        width: 170px !important;
+        margin-top: 1em;
     }
+
     .results-score {
-        font-size: 20px;
+        font-size: 15px;
         padding: 10px 20px 10px 20px;
         margin-top: -0.5em;
       }
   
       .inner-results-ctn h3 {
-        font-size: 33px;
+        font-size: 27px;
         margin-bottom: -0.75em;
         letter-spacing: 2px;
       }
   
       .results-text {
-        font-size: 20px;
+        font-size: 17px;
         line-height: 1.5;
         text-align: center;
         max-width: 500px;
         letter-spacing: 1px;
-        margin-bottom: 1.5em;
+        margin-botom: 0.5em;
       }
   }
